@@ -1,6 +1,6 @@
 import {AbsoluteFill, Img} from 'remotion';
 
-export const MyComposition = () => {
+export const GigachadMakerComp = () => {
 	return (
 		<AbsoluteFill className="items-center justify-center bg-gray-300">
 			<Img

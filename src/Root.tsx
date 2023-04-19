@@ -1,13 +1,13 @@
 import {Composition} from 'remotion';
-import {MyComposition} from './Composition';
+import {GigachadMakerComp} from './GigachadMakerComp';
 import './style.css';
 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
 			<Composition
-				id="MyComp"
-				component={MyComposition}
+				id="GigachadMakerComp"
+				component={GigachadMakerComp}
 				durationInFrames={240}
 				fps={30}
 				width={480}
