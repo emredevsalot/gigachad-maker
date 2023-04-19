@@ -1,6 +1,23 @@
-import React from 'react';
-import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+// Notes for different concepts of Remotion
+// @ts-nocheck
 
+// Set opacity from 0 to 1 in the frames between 30 and 50.
+export const Subtitle: React.FC = () => {
+	const frame = useCurrentFrame();
+	const opacity = interpolate(frame, [30, 50], [0, 1], {
+		extrapolateLeft: 'clamp',
+		extrapolateRight: 'clamp',
+	});
+
+	return (
+		<div className="text-gray-600 text-3xl" style={{opacity}}>
+			Edit <code>src/Composition.tsx</code> and save to reload.
+		</div>
+	);
+};
+
+// Logo starts at the bottom of the screen, slides into the middle(33)
+// and animates slowly in vertical direction.(36,37)
 export const Logo: React.FC = () => {
 	const frame = useCurrentFrame();
 	const {height, fps} = useVideoConfig();
