@@ -1,9 +1,12 @@
-import {AbsoluteFill} from 'remotion';
+import {AbsoluteFill, Img} from 'remotion';
 
 export const MyComposition = () => {
 	return (
 		<AbsoluteFill className="bg-gray-300 items-center justify-center">
-			<div className="text-center text-7xl font-extrabold">Test</div>
+			<Img
+				className="object-cover w-full h-full"
+				src="https://picsum.photos/id/91/3504/2336"
+			/>
 		</AbsoluteFill>
 	);
 };
