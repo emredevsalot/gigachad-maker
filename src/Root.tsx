@@ -8,7 +8,7 @@ export const RemotionRoot: React.FC = () => {
 			<Composition
 				id="GigachadMakerComp"
 				component={GigachadMakerComp}
-				durationInFrames={180}
+				durationInFrames={360}
 				fps={30}
 				width={480}
 				height={640}
