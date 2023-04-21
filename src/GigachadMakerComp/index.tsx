@@ -5,10 +5,10 @@ const images = [
 	'https://picsum.photos/id/91/700/460',
 	'https://picsum.photos/id/219/833/555',
 	'https://picsum.photos/id/338/666/433',
-	'https://images.unsplash.com/photo-1682027888746-25b1af7bd47f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
+	'https://cdn.pixabay.com/photo/2023/04/16/09/49/waterfall-7929685_960_720.jpg',
 ];
 
-const MOVING_SPEED = 2;
+const MOVING_SPEED = 1;
 const DURATION = 90;
 
 export const GigachadMakerComp = () => {
@@ -54,13 +54,13 @@ export const GigachadMakerComp = () => {
 		}
 
 		let horizontalMovement = `${directions[0]}${
-			(frame % DURATION) * movements[0]
+			(DURATION - (frame % DURATION)) * movements[0]
 		}px`;
 		let verticalMovement = `${directions[1]}${
-			(frame % DURATION) * movements[1]
+			(DURATION - (frame % DURATION)) * movements[1]
 		}px`;
 
-		return `${horizontalMovement} ${verticalMovement}`;
+		return `${horizontalMovement}, ${verticalMovement}`;
 	};
 
 	return (
@@ -77,12 +77,13 @@ export const GigachadMakerComp = () => {
 							<h1 className="absolute z-10 bg-white p-2 text-2xl font-semibold drop-shadow-md">
 								{width + ',' + height}
 							</h1>
-							<div className="z-20 ml-16 mt-16 h-[480px] w-[360px] outline outline-8 outline-red-500">
+							<div className="z-20 ml-16 mt-16 flex h-[480px] w-[360px] items-center justify-center outline outline-8 outline-red-500">
 								<Img
 									onLoad={handleImageLoad}
-									className="h-[100%] w-[100%] overflow-visible object-cover grayscale"
+									className="h-[150%] w-[150%] overflow-visible object-cover grayscale"
 									style={{
-										objectPosition: handleImageMovement(i),
+										transform: `translate(${handleImageMovement(i)})`,
+										// transform: 'translate(90px,0px)',
 									}}
 									src={image}
 								/>
