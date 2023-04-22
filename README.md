@@ -26,6 +26,7 @@ npm i
 
 - Create a `public` folder in your project.
 - Add 4 images to `public` folder.
+- Change image names in `images` variable in `src/GigaChadMakerComp/index.tsx`
 
 ### 3 - Start Preview
 

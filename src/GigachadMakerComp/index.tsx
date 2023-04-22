@@ -3,10 +3,10 @@ import {Img, Sequence, staticFile, useCurrentFrame} from 'remotion';
 
 // Get 4 images from public file (public is ignored in .gitignore)
 const images = [
-	staticFile('/image1.jpg'),
-	staticFile('/image2.jpeg'),
-	staticFile('/image3.jpeg'),
-	staticFile('/image4.jpeg'),
+	staticFile('/gigacat1.jpg'),
+	staticFile('/gigacat2.jpg'),
+	staticFile('/gigacat3.jpg'),
+	staticFile('/gigacat4.jpg'),
 ];
 
 const MOVING_SPEED = 1;
