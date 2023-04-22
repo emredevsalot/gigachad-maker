@@ -1,6 +1,6 @@
 # Gigachad Maker
 
-Gigachad Makes helps you create a "Gigachad Meme" video by using the [Remotion](https://github.com/remotion-dev/remotion) library for React framework.
+Gigachad Maker helps you create a "Gigachad Meme" gif by using the [Remotion](https://github.com/remotion-dev/remotion) library for React framework.
 
 You simply upload 4 images in the "public" folder in your project, and Remotion takes those images and creates a video for you. You can then export it as a gif or a video.
 
