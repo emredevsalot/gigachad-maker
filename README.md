@@ -39,7 +39,7 @@ npm start
 npm run build
 ```
 
-### 5 - Render video
+### 5 - Voila
 
 - Your video will be ready at `out` folder.
 
