@@ -1,11 +1,12 @@
 import {useState} from 'react';
-import {Img, Sequence, useCurrentFrame} from 'remotion';
+import {Img, Sequence, staticFile, useCurrentFrame} from 'remotion';
 
+// Get 4 images from public file (public is ignored in .gitignore)
 const images = [
-	'https://picsum.photos/id/91/700/460',
-	'https://picsum.photos/id/219/833/555',
-	'https://picsum.photos/id/338/666/433',
-	'https://cdn.pixabay.com/photo/2023/04/16/09/49/waterfall-7929685_960_720.jpg',
+	staticFile('/image1.jpg'),
+	staticFile('/image2.jpeg'),
+	staticFile('/image3.jpeg'),
+	staticFile('/image4.jpeg'),
 ];
 
 const MOVING_SPEED = 1;
@@ -74,10 +75,11 @@ export const GigachadMakerComp = () => {
 						name={'Image ' + (i + 1)}
 					>
 						<div>
-							<h1 className="absolute z-10 bg-white p-2 text-2xl font-semibold drop-shadow-md">
+							{/* <h1 className="absolute z-10 bg-white p-2 text-2xl font-semibold drop-shadow-md">
 								{width + ',' + height}
-							</h1>
-							<div className="z-20 ml-16 mt-16 flex h-[480px] w-[360px] items-center justify-center outline outline-8 outline-red-500">
+							</h1> */}
+							<div className="z-20 flex h-[640px] w-[480px] items-center justify-center outline outline-8 outline-red-500">
+								{/* <div className="z-20 ml-16 mt-16 flex h-[480px] w-[360px] items-center justify-center outline outline-8 outline-red-500"> */}
 								<Img
 									onLoad={handleImageLoad}
 									className="h-[150%] w-[150%] overflow-visible object-cover grayscale"
