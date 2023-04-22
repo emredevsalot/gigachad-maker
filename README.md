@@ -1,60 +1,74 @@
-# Remotion video with Tailwind
+# Gigachad Maker
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.gif">
-      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
-    </picture>
-  </a>
-</p>
+Gigachad Makes helps you create a "Gigachad Meme" video by using the [Remotion](https://github.com/remotion-dev/remotion) library for React framework.
 
-Welcome to your Remotion project!
+You simply upload 4 images in the "public" folder in your project, and Remotion takes those images and creates a video for you. You can then export it as a gif or a video.
 
-## Commands
+## Why I Created This Project
 
-**Install Dependencies**
+As a frontend developer, I wanted to improve my skills in CSS and get more comfortable using 3rd party libraries to build things.
+
+Remotion is a great library that allows you to create videos programmatically using React components. By creating this project, I was able to not only learn more about React and TypeScript, but also improve my skills in CSS and Tailwind.
+
+## How to Use This Project
+
+This project is initialized with [Remotion Tailwind Template](https://github.com/remotion-dev/template-tailwind).
+
+You can follow the steps after cloning the project.
+
+### 1 - Install Dependencies
 
 ```console
 npm i
 ```
 
-**Start Preview**
+### 2 - Add Images
+
+- Create a `public` folder in your project.
+- Add 4 images to `public` folder.
+
+### 3 - Start Preview
 
 ```console
 npm start
 ```
 
-**Render video**
+### 4 - Render video
 
 ```console
 npm run build
 ```
 
-**Upgrade Remotion**
+### 5 - Render video
+
+- Your video will be ready at `out` folder.
+
+### Upgrade Remotion
 
 ```console
 npm run upgrade
 ```
 
-## Using server-side rendering
+## Roadmap
 
-This template uses a [custom Webpack override](https://www.remotion.dev/docs/webpack). If you are using server-side rendering, you need to import the override function from `./src/webpack-override.ts` and pass it to [`bundle()`](https://www.remotion.dev/docs/bundle) (if using SSR) and [`deploySite()`](https://www.remotion.dev/docs/lambda/deploysite) (if using Lambda).
+- Integrate [Server Side Rendering](https://www.remotion.dev/docs/ssr)
 
-## Docs
+## Lessons Learned
+
+- First, i tried to tackle this problem using FFmpeg in a React project. Even though i could create a basic slideshow creator with it, i couldn't advance more because of lack of deep understanding about the concept behind FFmpeg. Remotion uses FFmpeg under the hood and being able to create videos with pure CSS helped me a ton. I gave up on client-site rendering when i switched to Remotion, but maybe we can find a workaround in the future.
+
+## Tech Stack
+
+- React, TypeScript, TailwindCSS, Remotion
+
+## About Remotion
 
 Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
 
 Get started with Tailwind by reading the ["Utility first" page](https://tailwindcss.com/docs/utility-first)
 
-## Help
-
-We provide help [on our Discord server](https://remotion.dev/discord).
-
-## Issues
+They provide help [on their Discord server](https://remotion.dev/discord).
 
 Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
 
-## License
-
-Notice that for some entities a company license is needed. Read [the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+Remotion License: Notice that for some entities a company license is needed. Read [the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
