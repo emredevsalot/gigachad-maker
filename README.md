@@ -26,7 +26,7 @@ It allowed me to explore Remotion and **get more comfortable using 3rd party lib
 
 This project is initialized with [Remotion Tailwind Template](https://github.com/remotion-dev/template-tailwind).
 
-### 1 - Clone the repository
+### 1 - Clone the repository:
 ```console
 git clone https://github.com/emredevsalot/gigachad-maker.git
 ```
@@ -36,27 +36,27 @@ git clone https://github.com/emredevsalot/gigachad-maker.git
 cd gigachad-maker
 ```
 
-### 3 - Install Dependencies
+### 3 - Install Dependencies:
 ```console
 npm install
 ```
 
-### 4 - Add Images
+### 4 - Add Images:
 - Create a `public` folder in your project.
 - Add 4 images to `public` folder.
 - Change image names in `images` variable in `src/GigaChadMakerComp/index.tsx`
 
-### 5 - Start Preview
+### 5 - Start Preview:
 ```console
 npm start
 ```
 
-### 6 - Render video
+### 6 - Render video:
 ```console
 npm run build
 ```
 
-### 7 - Voila
+### 7 - Voila:
 - Your video will be ready at `out` folder.
 
 ## Roadmap
