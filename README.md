@@ -28,7 +28,7 @@ This project is initialized with [Remotion Tailwind Template](https://github.com
 
 ### 1 - Clone the repository
 ```console
-git clone https://github.com/your-username/gigachad-maker.git
+git clone https://github.com/emredevsalot/gigachad-maker.git
 ```
 
 ### 2 - Navigate to the project directory:
